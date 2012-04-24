@@ -76,7 +76,6 @@ a,a:visited{
 article{
     /*background-color: #fdf6e3;*/
     background: url(old_wall.png);
-    color: #657b83;
     box-shadow: 0 3px 15px #002b36;
 
     position: absolute;
@@ -118,12 +117,22 @@ article h2 {
 
     margin-top: 25%;
 }
+/* Colors */
+article {
+    color: #996b62;
+}
+h3 {
+    color: #663c5c;
+}
 pre, ul, p{
     text-align: left;
+    color: #C99063;
 }
 pre {
     border: dotted 1px gray;
     padding: 10px;
+    color: #242040;
+    font-size: 26px;
 }
 ul {
     line-height: 2em;

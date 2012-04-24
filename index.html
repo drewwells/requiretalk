@@ -8,12 +8,14 @@
 
         <article class="current">
             <h2>RequireJS, future of JS</h2>
+            <div style="padding-left: 60px;">
             <p>
                 Use the arrow keys to navigate ->, <- or touch.
             </p>
             <p>
                 Up and down skips 10 forward or backwards.
             </p>
+            </div>
         </article>
         <article>
             <h3>Topics</h3>
@@ -50,6 +52,21 @@ define(function(){
         <article>
             <h3>What is RequireJS?</h3>
             <pre>
+define([ 'sugar', 'milk', 'egg', 'mixer' ],
+       function( ing1, ing2, ing3, mix ){
+
+   var cookieDough = mix( ing1, ing2, ing3 );
+
+   return cookieDough;
+});
+            </pre>
+            <p>
+                All dependencies are resolved prior to execution of the module code.
+            </p>
+        </article>
+        <article>
+            <h3>What is RequireJS?</h3>
+            <pre>
 require([ "module1", "module2" ],
         function( module1, module2 ){
 
@@ -58,7 +75,7 @@ require([ "module1", "module2" ],
 });
             </pre>
             <p>
-                Require will resolve remote dependencies before resolving the callback.
+                Require inline dependencies within your module code.
             </p>
         </article>
         <article>
@@ -67,8 +84,13 @@ require([ "module1", "module2" ],
         <article>
             <h3>Why are we using RequireJS?</h3>
             <p>
-                Why not <a href="https://docs.google.com/spreadsheet/ccc?key=0Aqln2akPWiMIdERkY3J2OXdOUVJDTkNSQ2ZsV3hoWVE#gid=2">labjs, ControlJS, Load.js, YepNope.js</a>, etc?
+                Why not <a href="https://docs.google.com/spreadsheet/ccc?key=0Aqln2akPWiMIdERkY3J2OXdOUVJDTkNSQ2ZsV3hoWVE#gid=2">labjs, YepNope.js, ControlJS, Load.js, etc?</a>
             </p>
+            <ul>
+                <li>labjs: Blocking</li>
+                <li>YepNope: Conditional</li>
+                <li>RequireJS: module loader</li>
+            </ul>
         </article>
         <article>
             <h3>Why are we using RequireJS?</h3>
@@ -102,16 +124,18 @@ inc( a ); //BROWSER ERROR!
             <h2>Where are we going?</h2>
         </article>
         <article>
-            <h3></h3>
-            <h4></h4>
-
+            <h3>Where are we going?</h3>
+            <ul>
+                <li>One giant, unreadable JavaScript file</li>
+                <li>Abstracted, reusable and maintainable code</li>
+                <li>JavaScript apps</li>
+                <li>Segmentation of features/functionality</li>
+                <li>Code ownership</li>
+                <li>Less is more, faster site performance</li>
+            </ul>
         </article>
         <article>
             <h3></h3>
-        </article>
-        <article>
-            <h3></h3>
-
         </article>
         <article>
             <h3></h3>
