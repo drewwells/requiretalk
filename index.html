@@ -7,9 +7,9 @@
     <div id="container">
 
         <article class="current">
-            <h2>jQuery Talk</h2>
+            <h2>RequireJS, future of JS</h2>
             <p>
-                Use the arrow keys to navigate ->, <- or use touch screen.
+                Use the arrow keys to navigate ->, <- or touch.
             </p>
             <p>
                 Up and down skips 10 forward or backwards.
@@ -18,141 +18,114 @@
         <article>
             <h3>Topics</h3>
             <ul>
-                <li>Execution Order</li>
-                <li>Code Organization</li>
-                <li>Effective jQuery</li>
+                <li>What is RequireJS?</li>
+                <li>Why are we using RequireJS?</li>
+                <li>Where are we going?</li>
             </ul>
         </article>
         <article>
-            <h3>Execution Order</h3>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/MLrZR/2/embedded/html,result/light" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Execution Order</h3>
+            <h3>What is RequireJS?</h3>
+            <pre style="border: 0 none; color: green; white-space: pre-line; font-size: 28px; letter-spacing: 2px;">
+                /* ---
 
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/jsRgV/3/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Execution Order</h3>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/jsRgV/4/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Execution Order</h3>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/jsRgV/5/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/R8K2a/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/R8K2a/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/xGwKj/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <h4>Function Expression vs Function Declaration</h4>
-            <iframe style="width: 100%; height: 400px" data-src="http://jsfiddle.net/vRqXt/3/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <h4>Function Expression vs Function Declaration</h4>
-            <iframe style="width: 100%; height: 400px" data-src="http://jsfiddle.net/vRqXt/2/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <h1><blink>Don't abuse the chain!</blink></h1>
-            <pre style="text-align: left;">
-$( document )
-  .find( 'link' )
-  .not( '.normal' )
-  .each(function(){
-    console.log( 'Link detected.' );
-  })
-  .on( 'click', function(){
-    alert( 'You found a link'. );
-  })
-  .wrap( 'blink' )
-  .css( 'color', 'red' )
-  .hide()
-  .trigger( 'theyClickedIt' );
+                RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code.
+
+                --- */
             </pre>
         </article>
         <article>
-            <h3>Code Organization</h3>
-            <iframe style="width: 100%; height: 325px" data-src="http://jsfiddle.net/sFHTy/3/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <iframe style="width: 100%; height: 325px" data-src="http://jsfiddle.net/sFHTy/4/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <h4>Call</h4>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/Z8r5X/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-            <h4>But wait, how do I use this with jQuery?</h4>
-        </article>
-        <article>
-            <h3>Code Organization</h3>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/Vwvpm/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Effective jQuery</h3>
+            <h3>What is RequireJS?</h3>
             <pre>
-$( 'div' ).doStuff();
-$( 'div' ).doMoreStuff();
-$( 'div' ).doMoreMoreStuff();
-$( 'div' ).doMoreMoreMoreStuff();
+define(function(){
+
+  return {
+    "ECMAScript": "is awesome"
+  };
+});
             </pre>
-        </article>
-        <article>
-            <h3>Effective jQuery</h3>
-            <h4>Context, help jQuery out</h4>
-            <h4>$parentElement.find()</h4>
-            <iframe style="width: 100%; height: 300px" data-src="http://jsfiddle.net/cAfyQ/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
-            <h3>Effective jQuery</h3>
             <p>
-                Don't use jQuery, progressive enhancement
+                Define a module.
             </p>
+        </article>
+        <article>
+            <h3>What is RequireJS?</h3>
+            <pre>
+require([ "module1", "module2" ],
+        function( module1, module2 ){
+
+  module1.init();
+  module2.init();
+});
+            </pre>
+            <p>
+                Require will resolve remote dependencies before resolving the callback.
+            </p>
+        </article>
+        <article>
+            <h2>Why are we using RequireJS?</h2>
+        </article>
+        <article>
+            <h3>Why are we using RequireJS?</h3>
+            <p>
+                Why not <a href="https://docs.google.com/spreadsheet/ccc?key=0Aqln2akPWiMIdERkY3J2OXdOUVJDTkNSQ2ZsV3hoWVE#gid=2">labjs, ControlJS, Load.js, YepNope.js</a>, etc?
+            </p>
+        </article>
+        <article>
+            <h3>Why are we using RequireJS?</h3>
             <ul>
-                <li>
-                    Have class
-                </li>
-                <li>
-                    CSS3
-                </li>
-                <li>
-                    CSS Transitions
-                </li>
+                <li>CommonJS and AMD support</li>
+                <li>Optimized script loading</li>
+                <li>Modularized code</li>
+                <li>Avoid one JS file with 8,000 LOC</li>
+                <li>Optimized built file</li>
             </ul>
         </article>
         <article>
-            <h2>Next steps</h2>
-        </article>
-
-        <article>
+            <h3>Why are we using RequireJS?</h3>
             <p>
-                <a href="http://api.jquery.com/">http://api.jquery.com</a>
+                <b>What is the Asynchronous Module Definition API?</b>
             </p>
-            <iframe data-src="http://api.jquery.com/" style="width: 104%; height: 500px;" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        </article>
-        <article>
+            <pre>
+define( id?, dependencies?, factory );
+            </pre>
             <p>
-                <a href="http://james.padolsey.com/jquery/">http://james.padolsey.com/jquery/</a>
+                <b>What is CommonJS?</b> Designed with no consideration to browsers
             </p>
-            <iframe data-src="http://james.padolsey.com/jquery/" style="width: 104%; height: 500px;" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <pre>
+var inc = require('increment')
+               .increment;
+var a = 1;
+inc( a ); //BROWSER ERROR!
+            </pre>
         </article>
         <article>
-            <p><a href="http://jsapi.info/">http://jsapi.info/</a></p>
-            <iframe data-src="http://jsapi.info/" style="width: 104%; height: 500px;" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <h2>Where are we going?</h2>
         </article>
         <article>
+            <h3></h3>
+            <h4></h4>
 
+        </article>
+        <article>
+            <h3></h3>
+        </article>
+        <article>
+            <h3></h3>
+
+        </article>
+        <article>
+            <h3></h3>
+
+        </article>
+        <article>
+            <h3>Caveats</h3>
+            <ul>
+                <li>Avoid comments before the define definition.</li>
+                <li>Cross dependencies a->b, b->a</li>
+                <li>One module per file</li>
+                <li>Plugins: text.js, order.js, r.js</li>
+                <li>Always specify dependencies</li>
+            </ul>
         </article>
         <article>
 

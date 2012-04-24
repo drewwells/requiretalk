@@ -5,6 +5,10 @@ html{
     font: 500 30px "Ubuntu";
 }
 
+pre {
+    font-family: Inconsolata, 'Andale Mono', Monaco, Monospace;
+}
+
 article:nth-child(even){
     font-family: "Salsa";
 }
@@ -34,9 +38,9 @@ body{
     -moz-perspective: 1000px;
     perspective: 1000px;
 
-    -webkit-transition: background-color 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
-    -moz-transition: background-color 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
-    transition: background-color 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
+    -webkit-transition: background 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
+    -moz-transition: background 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
+    transition: background 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
 
 }
 
@@ -55,24 +59,25 @@ body{
 }
 /* Colors */
 body {
-    background-color: #eee8d5;
+    /*background-color: #eee8d5;*/
+    background: url(light_honeycomb.png);
 }
 
 body.odd {
-    background-color: #93a1a1;
+    /*background-color: #93a1a1;*/
+    background: url(tex2res5.png);
 }
 
-article{
-    background-color: #fdf6e3;
-    color: #657b83;
-    box-shadow: 0 3px 15px #002b36;
-}
 a,a:visited{
     color: #d33682;
     text-decoration: none;
 }
 
 article{
+    /*background-color: #fdf6e3;*/
+    background: url(old_wall.png);
+    color: #657b83;
+    box-shadow: 0 3px 15px #002b36;
 
     position: absolute;
     width: 850px;
@@ -113,10 +118,13 @@ article h2 {
 
     margin-top: 25%;
 }
-pre, ul{
+pre, ul, p{
     text-align: left;
 }
-
+pre {
+    border: dotted 1px gray;
+    padding: 10px;
+}
 ul {
     line-height: 2em;
 }
